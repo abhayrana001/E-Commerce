@@ -32,7 +32,7 @@ const page = async () => {
 
           </div>
 
-          <div className='my-4 grid grid-cols-5 gap-3'>
+          <div className='my-4 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5'>
             {data?.products?.map((item: Product) => {
               return (
                 <ProductBox key={item.id} product={item} />

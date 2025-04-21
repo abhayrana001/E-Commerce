@@ -5,7 +5,7 @@ import Slider from './Slider'
 const HeroSection = () => {
     return (
         <Container>
-            <section className={styles.hero}>
+            <section className={`${styles.hero}`}>
                 {/* Text Section */}
                 <div className={`${styles.textSection} text-gray-700`}>
                     <h1>

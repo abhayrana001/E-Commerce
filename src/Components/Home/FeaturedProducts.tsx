@@ -27,7 +27,7 @@ const FeaturedProducts = async () => {
                 <h1 className='text-center font-bold text-3xl'>
                     Featured Products
                 </h1>
-                <div className='my-4 grid grid-cols-5 gap-3'>
+                <div className='my-4 grid grid-cols-2 gap-3 sm:grid-cols-5'>
                     {data?.products?.map((item: Product) => {
                         return (
                             <ProductBox key={item.id} product={item} />

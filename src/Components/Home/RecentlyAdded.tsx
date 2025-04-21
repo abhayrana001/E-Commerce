@@ -29,7 +29,7 @@ const RecentlyAdded = () => {
                 <h1 className='text-center font-bold text-3xl'>
                     Recently Added Products
                 </h1>
-                <div className='my-4 grid grid-cols-5 gap-3'>
+                <div className='my-4 grid grid-cols-2 gap-3 sm:grid-cols-5'>
                     {productData?.map((item) => {
                         return (
                             <ProductBox key={item.id} product={item} />
