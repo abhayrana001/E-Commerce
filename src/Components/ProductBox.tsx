@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
 import styles from '@/styles/product.module.css'
-import Link from 'next/link'
 
 
 const ProductBox = ({ product }: {
@@ -14,7 +13,6 @@ const ProductBox = ({ product }: {
 }) => {
   return (
     <div className={`${styles.card} bg-white p-4 rounded-lg shadow-lg`}>
-      <Link href={"/store/product-details/" + product.id}>
         <Image
           src={product.image}
           alt={product.title}
@@ -22,7 +20,6 @@ const ProductBox = ({ product }: {
           height={150}
           className={`${styles.productImage} w-full h-48 object-contain rounded-md`}
         />
-      </Link>
       <div className="mt-4">
         <h3 className="text-sm min-h-[70px] font-semibold text-blue-800">
           {product.title}
