@@ -1,19 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { inter } from "./ui/font";
 import Header from "@/Components/Header";
-import Footer from "@/Components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "E-Commerce",
@@ -30,7 +19,6 @@ export default function RootLayout({
        <body className={`${inter.className} antialiased`}>
         <Header/>
         {children}
-        {/* <Footer/> */}
       </body>
     </html>
   );

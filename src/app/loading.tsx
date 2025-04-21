@@ -2,7 +2,7 @@
 import Lottie from 'lottie-react';
 import React from 'react'
 import animationDataNew from "@/Components/loader/Animation - 1745212551090.json"
-const Loading = ({text}:{text:any}) => {
+const Loading = ({text}:{text:string}) => {
  return (
     <div
       className="fixed justify-center items-center"

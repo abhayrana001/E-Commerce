@@ -30,7 +30,7 @@ const RecentlyAdded = () => {
                     Recently Added Products
                 </h1>
                 <div className='my-4 grid grid-cols-5 gap-3'>
-                    {productData?.map((item, index) => {
+                    {productData?.map((item) => {
                         return (
                             <ProductBox key={item.id} product={item} />
                         )
